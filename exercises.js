@@ -1,7 +1,5 @@
-
-
-
-
+const openButtons = document.querySelectorAll("[data-modal-target]");
+const closeButtons = document.querySelectorAll("[data-close-btn]");
 
 
 
