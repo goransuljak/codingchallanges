@@ -56,4 +56,17 @@ const bodyBack = document.querySelector("body");
 const hex = document.querySelector(".hex");
 
 
+hexBtn.addEventListener("click", getHex);
+
+function getHex() {
+    let hexCol = "#";
+ for(let i = 0; i < 6; i++) {
+    let random = Math.floor(Math.random() * hexNumber.length);
+    hexCol += hexNumber[random];
+ }
+ bodyBack.style.backgroundColor = hexCol;
+ hex.innerHTML = hexCol;
+ hex.style.color = hexCol;
+}
+
 
