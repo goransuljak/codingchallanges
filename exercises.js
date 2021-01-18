@@ -47,9 +47,25 @@
 //challenges 
 
 function longestWord(sen) {
+    const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
     
+
+    //sort by legnth
+    const sorted = wordArr.sort(function(a, b){
+      return b.length - a.length;
+    })
+
+    const longestWordArr = sorted.filter(function (word){
+        return word.length === sorted[0].length;
+    })
+    if(longestWordArr.length === 1) {
+        return longestWordArr[0];
+    } else {
+        return longestWordArr.join(" ");
+    }
+
 }
 
-const result = longestWord("Javascript is great");
+const result = longestWord("Javasc sexsex is great");
 
 console.log(result);
