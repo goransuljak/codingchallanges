@@ -3,43 +3,39 @@ const closeButtons = document.querySelectorAll("[data-close-btn]");
 const overlay = document.getElementById("overlay");
 
 
-
 openButtons.forEach(button => {
-    button.addEventListener('click', ()=> {
-     const modal = document.querySelector(button.dataset.modalTarget);
-     openModal(modal);
-    })
-})
-closeButtons.forEach(button => {
-    button.addEventListener('click', ()=> {
-     const modal = button.closest('.modal')
-     closeModal(modal);
+    button.addEventListener("click", () => {
+        const modal =document.querySelector(
+            button.dataset.modalTarget)
+            openModal(modal);
     })
 })
 
 
 
 function openModal(modal) {
- if(modal == null) return
- modal.classList.add('active')
- overlay.classList.add('active')
+    if(modal === null) return
+    modal.classList.add("active");
+    overlay.classList.add("active")
 }
 
 
-function closeModal(modal) {
-    if(modal == null) return
-    modal.classList.remove('active')
-    overlay.classList.remove('active')
-   }
-   
+// close
+openButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const modal =document.querySelector(
+            button.dataset.modalTarget)
+            openModal(modal);
+    })
+})
 
 
 
-
-
-
-
-
+function openModal(modal) {
+    if(modal === null) return
+    modal.classList.add("active");
+    overlay.classList.add("active")
+}
 
 
 
