@@ -3,6 +3,8 @@ const imgs = document.querySelectorAll('.imgs img');
 
 const opacity = 0.4;
 
+imgs[0].style.opacity = opacity;
+
 imgs.forEach(img => 
     img.addEventListener("click", imgClick));
 
