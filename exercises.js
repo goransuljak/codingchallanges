@@ -46,26 +46,14 @@
 
 //challenges 
 
-function longestWord(sen) {
-    const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
-    
 
-    //sort by legnth
-    const sorted = wordArr.sort(function(a, b){
-      return b.length - a.length;
-    })
 
-    const longestWordArr = sorted.filter(function (word){
-        return word.length === sorted[0].length;
-    })
-    if(longestWordArr.length === 1) {
-        return longestWordArr[0];
-    } else {
-        return longestWordArr.join(" ");
-    }
+const hexNumber = 
+[0,1,2,3,4,5,6,7,8,9,"A", "B","C","D","E","F"];
 
-}
+const hexBtn = document.querySelector(".hexBtn");
+const bodyBack = document.querySelector("body");
+const hex = document.querySelector(".hex");
 
-const result = longestWord("Javasc sexsex is great");
 
-console.log(result);
+
