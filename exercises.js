@@ -1,6 +1,12 @@
 const main = document.getElementById("main");
-const addUser = document.getElementById("add-user");
-const double = document.getElementById("double");
-const showMillionaires = document.getElementById("show-millionaires");
-const sort = document.getElementById("sort");
-const calculateWealth = document.getElementById("calculate-wealth");
+const addUserBtn = document.getElementById("add-user");
+const doubleBtn = document.getElementById("double");
+const showMillionairesBtn = document.getElementById("show-millionaires");
+const sortBtn = document.getElementById("sort");
+const calculateWealthBtn = document.getElementById("calculate-wealth");
+
+
+let data = [];
+
+
+
